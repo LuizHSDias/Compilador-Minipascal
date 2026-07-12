@@ -33,20 +33,15 @@ Desenvolver um compilador completo capaz de:
 
 # 📂 Estrutura do Projeto
 
-```
+```text
 comcet
 │
 ├── caso_teste/
-│
 ├── src/
-│   ├── main/
-│   │   ├── antlr4/
-│   │   └── java/
-│   │
-│   └── test/
-│
-├── pom.xml
-└── README.md
+├── .gitignore
+├── .gitlab-ci.yml
+├── README.md
+└── pom.xml
 ```
 
 ---
