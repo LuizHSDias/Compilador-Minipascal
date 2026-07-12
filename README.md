@@ -37,6 +37,8 @@ Desenvolver um compilador completo capaz de:
 comcet
 │
 ├── caso_teste/
+├── print/
+│   └── fatorial.png
 ├── src/
 ├── .gitignore
 ├── .gitlab-ci.yml
@@ -311,8 +313,13 @@ begin
 end
 ```
 
----
+Resultado da execução:
 
+<p align="center">
+  <img src="print/fatorial.png" alt="Execução do programa fatorial" width="700">
+</p>
+
+---
 # 📈 Evolução do Projeto
 
 | Etapa | Descrição |
