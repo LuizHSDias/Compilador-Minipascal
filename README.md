@@ -263,19 +263,26 @@ mvn test
 
 # ▶ Como Executar
 
-### Compilar o projeto
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/LuizHSDias/Compilador-Minipascal.git
+cd Compilador-Minipascal/comcet
+```
+
+### 2. Compilar o projeto
 
 ```bash
 mvn clean compile
 ```
 
-### Executar os testes
+### 3. Executar os testes
 
 ```bash
 mvn test
 ```
 
-### Gerar o bytecode
+### 4. Gerar o bytecode
 
 ```bash
 mvn exec:java -Dexec.mainClass="br.com.comcet.tp7.MainCodeGenerator" -Dexec.args="caso_teste/fatorial.pas"
@@ -283,15 +290,16 @@ mvn exec:java -Dexec.mainClass="br.com.comcet.tp7.MainCodeGenerator" -Dexec.args
 
 Após a geração do bytecode será criado um arquivo `.class`.
 
-Para executá-lo:
+### 5. Executar o programa gerado
 
 ```bash
 java fatorial
 ```
-
 ---
 
 # 📄 Exemplo
+
+O exemplo abaixo demonstra um programa em MiniPascal que calcula o fatorial de um número utilizando o comando `while`. Após a geração do bytecode para a JVM, o programa é executado e imprime o resultado esperado.
 
 Arquivo MiniPascal:
 
@@ -315,9 +323,13 @@ end
 
 Resultado da execução:
 
+A imagem abaixo mostra a geração do arquivo `fatorial.class` pelo compilador e, em seguida, a execução do programa na Máquina Virtual Java (JVM), produzindo como saída o valor **120**, correspondente ao fatorial de 5.
+
 <p align="center">
   <img src="print/fatorial.png" alt="Execução do programa fatorial" width="700">
 </p>
+
+---
 
 ---
 # 📈 Evolução do Projeto
