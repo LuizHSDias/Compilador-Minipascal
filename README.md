@@ -294,16 +294,20 @@ java fatorial
 Arquivo MiniPascal:
 
 ```pascal
-var x : integer;
+var n : integer;
+var fat : integer;
 
 begin
-    x := 10;
+    n := 5;
+    fat := 1;
 
-    while x > 0 do
+    while n > 1 do
     begin
-        print(x);
-        x := x - 1;
+        fat := fat * n;
+        n := n - 1;
     end
+
+    writeln(fat);
 end
 ```
 
